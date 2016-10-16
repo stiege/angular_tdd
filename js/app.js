@@ -5,7 +5,7 @@ app.config(function($stateProvider, $urlRouterProvider){
     $urlRouterProvider.otherwise('/');
     $stateProvider.state('home', {
         url: '/',
-        templateUrl: 'includes/graph.html'
+        template: '<graph></graph>'
     });
 }).directive('graph', ["$window", function($window) {
 
